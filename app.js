@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-for (var i = 1; i < 100; i++) {
+
+
+    var i = prompt("Enter Starting Number", "1");
+    
+for (var i; i < 100; i++) {
 
 	if (i % 5 === 0 && i % 3 === 0) {
 	  console.log("fizzbuzz");
@@ -10,8 +14,6 @@ for (var i = 1; i < 100; i++) {
 	} else if (i % 5 === 0) {
 	  $( ".number" ).append( "buzz<br>");
 	}
-
-
 
 	else {
 	$( ".number" ).append(i+"<br>");
